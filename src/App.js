@@ -1,22 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header.js';
+
 
 const App = () => {
   return (
     <div className="App">
       <Header/>
       <Main/>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
 
-const Header = () => {
+
+const Item = () => {
   return (
-    <header className="header">
-      <h1>I am header!</h1>
-      
-    </header>
+    <li>
+      hi
+    </li>
   );
 }
 

@@ -1,0 +1,16 @@
+.main {
+    grid-area: main;
+    border: 1px solid black;
+    background-color: lightblue;
+  }
+  
+  .main-img {
+    height: 50px;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  

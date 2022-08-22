@@ -1,11 +1,15 @@
+import classes from './Navbar.module.css';
+
 const Navigation = () => {
     return (
-      <nav className='nav'>
-        <div><a href="#" title="Profile">Profile</a></div>
-        <div><a href="#" title="Messages">Messages</a></div>
-        <div><a href="#" title="News">News</a></div>
-        <div><a href="#" title="Music">Music</a></div>
-        <div><a href="#" title="Settings">Settings</a></div>
+      <nav className={classes.nav}>
+        <div className={classes.item}><a title="Profile">Profile</a></div>
+        <div className={classes.item}><a title="Friends">Friends</a></div>
+        <div className={classes.item}><a title="Messages">Messages</a></div>
+        <div className={classes.item}><a title="Photos">Photos</a></div>
+        <div className={classes.item}><a title="News">News</a></div>
+        <div className={classes.item}><a title="Music">Music</a></div>
+        <div className={classes.item}><a title="Settings">Settings</a></div>
     </nav>
     )
 };

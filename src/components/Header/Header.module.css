@@ -2,13 +2,12 @@
 
 .header {
   display: grid;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 2fr 11fr;
   align-items: center;
   color: white;
 }
 
 .menu {
-  border: 1px solid red
 }
 
 .logo {

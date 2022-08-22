@@ -1,2 +1,2 @@
 # Social Network
-Here i learn React and with developing my social network project.
+Here i'm learning React with developing my social network project.

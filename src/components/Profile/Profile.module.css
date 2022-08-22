@@ -1,6 +1,6 @@
 .main {
     grid-area: main;
-    background-color: #effafa;
+    background-color: #f1f1f1;
     display: flex;
     justify-content: center;
     padding-top: 20px;
@@ -24,6 +24,8 @@
   height: 200px;
   border-radius: 50%;
   background-color: lemonchiffon;
+  background: url(https://i.pinimg.com/280x280_RS/4c/46/b2/4c46b220fdd0495e07c20338c71dbd13.jpg);
+  background-size: contain;
 }
 
 .cover {

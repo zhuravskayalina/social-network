@@ -1,15 +1,19 @@
 .app-wrapper {
   display: grid;
-  grid-template-rows: 60px 1fr;
+  margin: 0 auto;
+  max-width: 1200px;
+  grid-template-rows: 100px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-template-areas:  "header header "
                         "nav main ";
+              
   
 }
 
 .logo-img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
   
 }
 
@@ -30,3 +34,14 @@
   border: 1px solid black;
   background-color: lightblue;
 }
+
+.main-img {
+  height: 50px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+}
+
+ 

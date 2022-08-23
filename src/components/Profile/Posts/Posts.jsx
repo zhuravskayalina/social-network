@@ -6,8 +6,8 @@ const Posts = () => {
         <div className={classes.postsWrapper}>
             <h2 className={classes.header}>My posts</h2>  
             <div className={classes.newPost}></div>
-            <Post/>
-            <Post/>        
+            <Post message='Oops i did it again' likesCount='8b'/>
+            <Post message='New post!!' likesCount='7b'/>        
         </div>
         
     )

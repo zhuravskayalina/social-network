@@ -1,6 +1,6 @@
 import classes from './Post.module.css';
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={classes.post}>
             <div className={classes.postInfo}>
@@ -11,9 +11,18 @@ const Post = () => {
                 </div>
             </div>
             <div className={classes.postContent}>
-                <p>
-                    Oops i did it again
+                <p>{props.message}
                 </p>
+                <div className={classes.underPostInfo}>
+                    <div className={classes.like}>
+                        <p className={classes.heart}>like!</p>
+                        <p>{props.likesCount} people likes this</p>
+                    </div>
+                    <div className={classes.comments}>
+                        0 comments
+                    </div>
+                </div>
+
             </div>
         </div>
     )

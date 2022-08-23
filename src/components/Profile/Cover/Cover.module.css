@@ -1,0 +1,29 @@
+.cover {
+    background-color: rgb(207, 185, 192);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.profilePhoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: lemonchiffon;
+    background: url(https://i.pinimg.com/280x280_RS/4c/46/b2/4c46b220fdd0495e07c20338c71dbd13.jpg);
+    background-size: contain;
+}
+
+.profileName {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+
+.profileStatus {
+    font-size: 20px;
+    color: white;
+}

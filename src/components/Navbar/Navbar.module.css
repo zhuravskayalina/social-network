@@ -22,3 +22,7 @@
   .item a {
     display: block;
   }
+
+  .active {
+   background-color: rgb(246, 246, 246);
+  }

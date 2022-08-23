@@ -4,7 +4,7 @@ const Navigation = () => {
     return (
     
         <ul className={classes.nav}>
-          <li className={classes.item}><a title="Profile">Profile</a></li>
+          <li className={`${classes.item} ${classes.active}`}><a title="Profile">Profile</a></li>
           <li className={classes.item}><a title="Friends">Friends</a></li>
           <li className={classes.item}><a title="Photos">Photos</a></li>
           <li className={classes.item}><a title="Messages">Messages</a></li>

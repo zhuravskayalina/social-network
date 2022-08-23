@@ -16,5 +16,11 @@
                         "nav main ";
 }
 
-
+.app-wrapper-content {
+  grid-area: main;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
  

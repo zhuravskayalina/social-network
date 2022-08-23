@@ -11,9 +11,11 @@ const App = () => {
         <div className='app-wrapper'>
             <Header/>
             <Navigation/>
+            <main class='app-wrapper-content'>
+                {/*<Profile name="Britney"/>*/}
+                <Dialogs />
+            </main>
 
-            {/*<Profile name="Britney"/>*/}
-            <Dialogs/>
 
         </div>
     );

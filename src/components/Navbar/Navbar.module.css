@@ -3,9 +3,9 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-  }
-  
-  .item a {
+}
+
+.item a {
     color: black;
     text-transform: uppercase;
     font-weight: bold;
@@ -13,16 +13,17 @@
     padding: 40px 20px;
     display: block;
     cursor: pointer;
-  }
+    text-decoration: none;
+}
 
-  .item:hover {
+.item:hover {
     background-color: rgb(246, 246, 246);
-  }
+}
 
-  .item a {
+.item a {
     display: block;
-  }
+}
 
-  .active {
-   background-color: rgb(246, 246, 246);
-  }
+.active {
+    background-color: rgb(246, 246, 246);
+}

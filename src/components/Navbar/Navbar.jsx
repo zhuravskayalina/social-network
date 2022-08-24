@@ -1,18 +1,33 @@
 import classes from './Navbar.module.css';
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
     return (
-    
+
         <ul className={classes.nav}>
-          <li className={`${classes.item} ${classes.active}`}><a href="/profile" title="Profile">Profile</a></li>
-          <li className={classes.item}><a href="/dialogs" title="Friends">Friends</a></li>
-          <li className={classes.item}><a title="Photos">Photos</a></li>
-          <li className={classes.item}><a title="Messages">Messages</a></li>
-          <li className={classes.item}><a title="News">News</a></li>
-          <li className={classes.item}><a title="Music">Music</a></li>
-          <li className={classes.item}><a title="Profile">Settings</a></li>
+            <li className={`${classes.item} ${classes.active}`}>
+                <Link to="/profile">Profile</Link>
+            </li>
+            <li className={classes.item}>
+                <Link to="/friends">Friends</Link>
+            </li>
+            <li className={classes.item}>
+                <Link to="/messages">Messages</Link>
+            </li>
+            <li className={classes.item}>
+                <Link to="/photos">Photos</Link>
+            </li>
+            <li className={classes.item}>
+                <Link to="/news">News</Link>
+            </li>
+            <li className={classes.item}>
+                <Link to="/music">Music</Link>
+            </li>
+            <li className={classes.item}>
+                <Link to="/settings">Settings</Link>
+            </li>
         </ul>
- 
+
     )
 };
 

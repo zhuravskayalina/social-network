@@ -1,8 +1,8 @@
-import c from './Dialogs.module.css';
-import DialoguesListItem from "./DialoguesListItem/DialoguesListItem";
-import DialogueWindow from "./DialogueWindow/DialogueWindow";
+import c from './Messages.module.css';
+import DialoguesListItem from "./MessagesListItem/DialoguesListItem";
+import DialogueWindow from "./MessageWindow/DialogueWindow";
 
-const Dialogs = () => {
+const Messages = () => {
     return (
         <div className={c.wrap}>
             <ul className={c.dialoguesList}>
@@ -16,9 +16,11 @@ const Dialogs = () => {
                 <DialoguesListItem name={'Zhenya Ranetka'}/>
                 <DialoguesListItem name={'Hunter Schaffer'}/>
             </ul>
+
             <DialogueWindow name={'Timothee Chalamet'}/>
+
         </div>
     )
 }
 
-export default Dialogs;
+export default Messages;

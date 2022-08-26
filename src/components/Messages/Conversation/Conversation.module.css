@@ -1,0 +1,16 @@
+.message {
+    border: 1px solid black;
+    padding: 20px;
+    display: inline-block;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+

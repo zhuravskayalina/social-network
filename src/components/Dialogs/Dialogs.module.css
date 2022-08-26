@@ -1,8 +1,15 @@
 .wrap {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    border: 1px solid black;
+    height: 100%;
+
 }
 
 .dialoguesList {
-
+    list-style: none;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

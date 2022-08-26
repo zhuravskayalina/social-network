@@ -1,0 +1,43 @@
+.dialogue {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid black;
+}
+
+.infoWindow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    border: 1px solid black;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menuItem {
+    cursor: pointer;
+}

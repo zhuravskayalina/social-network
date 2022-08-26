@@ -6,7 +6,7 @@
 
 }
 
-.dialoguesList {
+.messagesList {
     list-style: none;
     border: 1px solid black;
     display: flex;

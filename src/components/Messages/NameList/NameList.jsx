@@ -1,6 +1,6 @@
-import c from './DialoguesListItem.module.css';
+import c from './NameList.module.css';
 
-const DialoguesListItem = (props) => {
+const NameList = (props) => {
     return (
         <li className={c.dialogueItem}>
             <div className={c.dialoguePhoto}></div>
@@ -18,4 +18,4 @@ const DialoguesListItem = (props) => {
     )
 };
 
-export default DialoguesListItem;
+export default NameList;

@@ -7,22 +7,25 @@ const Message = (props) => {
 };
 
 const messagesData = [
-    {id: 1, message: 'hi how is it going'},
-    {id: 1, message: 'did ya know michael jackson is alive'},
-    {id: 2, message: 'fine..'},
-    {id: 2, message: 'frankly i knew it'},
+    {id: 1, text: 'hi how is it going'},
+    {id: 1, text: 'did ya know michael jackson is alive'},
+    {id: 2, text: 'fine..'},
+    {id: 2, text: 'frankly i knew it'},
 ];
+
+const messagesElements = messagesData.map(message => {
+    return (
+        <Message message={message.text}/>
+    );
+});
 
 const Conversation = () => {
     return (
         <main className={c.main}>
             <div className={`${c.messages} ${c.otherPersonMessages}`}>
-                <Message message={messagesData[0].message}/>
-                <Message message={messagesData[1].message}/>
-            </div>
-            <div className={`${c.messages} ${c.pageOwnerMessages}`}>
-                <Message message={messagesData[2].message}/>
-                <Message message={messagesData[3].message}/>
+                {
+                    messagesElements
+                }
             </div>
         </main>)
 };

@@ -6,23 +6,24 @@ const Message = (props) => {
     );
 };
 
-const messagesData = [
-    {id: 1, text: 'hi how is it going'},
-    {id: 1, text: 'did ya know michael jackson is alive'},
-    {id: 2, text: 'fine..'},
-    {id: 2, text: 'frankly i knew it'},
-];
-
-const messagesElements = messagesData.map(message => {
-    return (
-        <Message message={message.text}/>
-    );
-});
 
 const Conversation = () => {
+    const messagesData = [
+        {id: 1, text: 'hi how is it going'},
+        {id: 1, text: 'did ya know michael jackson is alive'},
+        {id: 2, text: 'fine..'},
+        {id: 2, text: 'frankly i knew it'},
+    ];
+
+    const messagesElements = messagesData.map(message => {
+        return (
+            <Message message={message.text}/>
+        );
+    });
+
     return (
         <main className={c.main}>
-            <div className={`${c.messages} ${c.otherPersonMessages}`}>
+            <div className={c.messages}>
                 {
                     messagesElements
                 }

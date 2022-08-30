@@ -25,18 +25,29 @@ const DialogItem = (props) => {
 };
 
 const Messages = () => {
+
+    const messagesData = [
+        {id: 1, name: "Channing Tatum"},
+        {id: 2, name: "Timothee Chalamet"},
+        {id: 3, name: "Florence Pugh"},
+        {id: 4, name: "Lindsay Lohan"},
+        {id: 5, name: "Madonna"},
+        {id: 6, name: "Joe Biden"},
+        {id: 7, name: "Zoe Kravitz"},
+        {id: 8, name: "Zhenya Ranetka"},
+        {id: 9, name: "Joe Campbell Bower"},
+    ];
+
+    const messagesElements = messagesData.map((person => {
+        return (
+            <DialogItem id={person.id} name={person.name}/>
+        );
+    }));
+
     return (
         <div className={c.wrap}>
             <ul className={c.messagesList}>
-                <DialogItem id="1" name="Channing Tatum"/>
-                <DialogItem id="2" name="Timothee Chalamet"/>
-                <DialogItem id="3" name="Florence Pugh"/>
-                <DialogItem id="4" name="Lindsay Lohan"/>
-                <DialogItem id="5" name="Madonna"/>
-                <DialogItem id="6" name="Joe Biden"/>
-                <DialogItem id="7" name="Zoe Kravitz"/>
-                <DialogItem id="7" name="Zhenya Ranetka"/>
-                <DialogItem id="9" name="Joe Campbell"/>
+                { messagesElements }
             </ul>
 
             <MessageWindow name={'Timothee Chalamet'}/>

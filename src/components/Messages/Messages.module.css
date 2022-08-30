@@ -13,3 +13,16 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.navlink {
+    text-decoration: none;
+}
+
+.name {
+    font-size: 20px;
+    color: black;
+}
+
+.dialogueItem {
+    border: 1px solid black;
+}

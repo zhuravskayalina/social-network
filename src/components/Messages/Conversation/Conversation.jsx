@@ -1,15 +1,23 @@
 import c from './Conversation.module.css';
 
+const Message = (props) => {
+    return (
+        <div className={c.message}>{props.message}</div>
+    );
+};
+
 const Conversation = () => {
     return (
         <main className={c.main}>
             <div className={`${c.messages} ${c.otherPersonMessages}`}>
-                <div className={c.message}>Hi how are you</div>
-                <div className={c.message}>Did ya know Michael Jackson is Alive? Confirmed by government</div>
+                <Message message="hi how is it going?"/>
+                <Message message="did ya know michael jackson is alive"/>
+
             </div>
             <div className={`${c.messages} ${c.pageOwnerMessages}`}>
-                <div className={c.message}>fine..</div>
-                <div className={c.message}>Wait WHAT</div>
+                <Message message="fine.."/>
+                <Message message="frankly i knew it"/>
+
             </div>
         </main>)
 };

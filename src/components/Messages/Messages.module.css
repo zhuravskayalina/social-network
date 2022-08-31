@@ -9,35 +9,6 @@
 .messagesList {
     list-style: none;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.navlink {
-    text-decoration: none;
-}
-
-.name {
-    font-size: 20px;
-    color: black;
-}
-
-.dialogueItem {
-    border: 1px solid black;
-    display: flex;
-}
-
-.dialoguePhoto {
-    width: 50px;
-    height: 50px;
-    background-color: pink;
-    border-radius: 50%;
-
-}
-
-.dialogueInfo {
-    display: flex;
-    justify-content: space-between;
-
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
 }

@@ -1,28 +1,6 @@
 import c from './Messages.module.css';
-import NameList from "./NameList/NameList";
 import MessageWindow from "./MessageWindow/MessageWindow";
-import {NavLink} from 'react-router-dom';
-
-const DialogItem = (props) => {
-    const path = '/messages/' + props.id;
-    return (
-        <NavLink className={c.navlink} to={path}>
-            <li className={c.dialogueItem}>
-                <div className={c.dialoguePhoto}></div>
-                <div className={c.dialogueContent}>
-                    <div className={c.dialogueInfo}>
-                        <div className={c.name}>{props.name}</div>
-                        <div className={c.date}>today</div>
-                    </div>
-                    <div className={c.messageText}>
-                        <div className={c.text}></div>
-                        <div className={c.newMessagesCount}></div>
-                    </div>
-                </div>
-            </li>
-        </NavLink>
-    )
-};
+import DialogItem from "./DialogItem/DialogItem";
 
 const Messages = () => {
 

@@ -1,11 +1,5 @@
 import c from './Conversation.module.css';
-
-const Message = (props) => {
-    return (
-        <div className={c.message}>{props.message}</div>
-    );
-};
-
+import Message from "./Message/Message";
 
 const Conversation = () => {
     const messagesData = [

@@ -1,0 +1,57 @@
+
+/*.navlink {*/
+/*    text-decoration: none;*/
+/*    border: 1px solid black;*/
+/*}*/
+
+.name {
+    font-size: 16px;
+    color: black;
+}
+
+.dialogueItem {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 10px;
+    color: black;
+    height: 100%;
+
+}
+
+.dialoguePhoto {
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dialogueInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    font-size: 13px;
+}
+
+.messageText {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newMessagesCount {
+    border: 1px solid #cae2dd;
+    background-color: lightskyblue;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

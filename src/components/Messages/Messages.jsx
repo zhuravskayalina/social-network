@@ -12,7 +12,7 @@ const DialogItem = (props) => {
                 <div className={c.dialogueContent}>
                     <div className={c.dialogueInfo}>
                         <div className={c.name}>{props.name}</div>
-                        <div className={c.date}></div>
+                        <div className={c.date}>today</div>
                     </div>
                     <div className={c.messageText}>
                         <div className={c.text}></div>

@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../render";
+
 const state = {
     profilePage: {
         postsData: [
@@ -24,6 +26,17 @@ const state = {
             {id: 2, text: 'frankly i knew it'},
         ]
     }
-}
+};
+
+export function addPost (postText) {
+    let newPost = {
+        id: 5,
+        text: postText,
+        likesCount: 0
+    };
+    state.profilePage.postsData.unshift(newPost);
+    rerenderEntireTree(state);
+};
+
 
 export default state;

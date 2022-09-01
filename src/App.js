@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import { Routes, Route, BrowserRouter} from "react-router-dom";
 import Header from './components/Header/Header';
 import Navigation from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Messages from "./components/Messages/Messages";
+
 
 
 const App = (props) => {
@@ -16,7 +16,9 @@ const App = (props) => {
             <main className='app-wrapper-content'>
                 <Routes>
                 <Route path="/messages" element={<Messages state={props.state.messagesPage}/> }/>
-                <Route path="/profile" element={<Profile name="Britney" state={props.state.profilePage}/>}/>
+                <Route path="/profile" element={<Profile name="Britney"
+                                                         state={props.state.profilePage}
+                                                         addPost={props.addPost}/>}/>
                 </Routes>
             </main>
         </div>

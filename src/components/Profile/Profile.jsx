@@ -5,9 +5,9 @@ import classes from './Profile.module.css';
 const Profile = (props) => {
 
     return (
-        <div className={classes.wrapper}>
+        <div>
             <Cover name="Britney"/>
-            <Posts postsData={props.postsData}/>
+            <Posts postsData={props.state.postsData}/>
         </div>
     )
 };

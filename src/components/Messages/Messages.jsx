@@ -4,7 +4,7 @@ import DialogItem from "./DialogItem/DialogItem";
 
 const Messages = (props) => {
 
-    const messagesElements = (props.state.messagesData).map((person => {
+    const dialogsElements = (props.state.messagesData).map((person => {
         return (
             <DialogItem id={person.id} name={person.name}/>
         );
@@ -13,7 +13,7 @@ const Messages = (props) => {
     return (
         <div className={c.wrap}>
             <ul className={c.messagesList}>
-                { messagesElements }
+                { dialogsElements }
             </ul>
 
             <MessageWindow name={'Timothee Chalamet'} messagesData={props.state.messagesData} messagesTextData={props.state.messagesTextData}/>

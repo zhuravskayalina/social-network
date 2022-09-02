@@ -2,8 +2,7 @@ import classes from './Posts.module.css';
 import Post from './Post/Post';
 import NewPost from "./NewPost/NewPost";
 
-const Posts = (props) => {
-
+const Posts = (props) => { //props.newPostText = 'hi lola'
      const postElements = props.postsData.map(post => {
         return (
             <Post message={post.text} likesCount={post.likesCount}/>
@@ -12,7 +11,9 @@ const Posts = (props) => {
 
     return (
         <div className={classes.postsWrapper}>
-            <NewPost addPost={props.addPost}/>
+            <NewPost addPost={props.addPost}
+                     newPostText={props.newPostText}
+                     updateNewPostText={props.updateNewPostText}/>
             <h2 className={classes.header}>My posts</h2>
             {
                 postElements

@@ -18,6 +18,7 @@ const App = (props) => {
                 <Route path="/messages" element={<Messages state={props.state.messagesPage}/> }/>
                 <Route path="/profile" element={<Profile name="Britney"
                                                          state={props.state.profilePage}
+                                                         updateNewPostText={props.updateNewPostText}
                                                          addPost={props.addPost}/>}/>
                 </Routes>
             </main>

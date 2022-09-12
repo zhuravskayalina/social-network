@@ -3,6 +3,7 @@ import React from "react";
 import newPost from "./NewPost";
 
 const NewPost = (props) => { //props.newPostText
+
     const newPostElement = React.createRef();
     function addNewPost() {
         props.addPost();

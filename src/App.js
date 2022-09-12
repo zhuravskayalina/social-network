@@ -8,6 +8,8 @@ import Messages from "./components/Messages/Messages";
 
 
 const App = (props) => {
+    // props = state; addPost = f; updateNewPostText = f;
+
     return (
         <BrowserRouter>
         <div className='app-wrapper'>

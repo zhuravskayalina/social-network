@@ -30,6 +30,7 @@ const state = {
 };
 
 export function addPost () {
+
     const newPost = {
         id: 5,
         text: state.profilePage.newPostText,
@@ -38,12 +39,12 @@ export function addPost () {
     state.profilePage.postsData.unshift(newPost);
     state.profilePage.newPostText = '';
     updateNewPostText('');
-    rerenderEntireTree();
+    rerenderEntireTree(state);
 };
 
 export function updateNewPostText (text) {
     state.profilePage.newPostText = text;
-    rerenderEntireTree();
+    rerenderEntireTree(state);
 };
 
 
